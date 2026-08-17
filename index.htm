@@ -1,11 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio - Adán Carranza</title>
+    <!-- Importación del CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                Portafolio
+            </div>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <img src="img/perfil.jpg" alt="Fotografía de Gerardo" class="foto-perfil">
+                    <p class="saludo">
+                        Bienvenido a mi portafolio
+                    </p>
+                    <h1>
+                        Hola, soy Gerardo Chaves
+                    </h1>
+                    <h2>
+                        Desarrollador de Software y Especialista en Ciberseguridad
+                    </h2>
+                    <p class="descripcion-hero">
+                        Desarrollo soluciones web, aplicaciones de escritorio y bases de datos utilizando
+                        diferentes tecnologías orientadas a resolver necesidades reales con un enfoque seguro.
+                    </p>
+                    <div class="hero-botones">
+                        <a href="#proyectos" class="btn">
+                            Ver proyectos
+                        </a>
+                        <a href="#contacto" class="btn btn-secundario">
+                            Contactarme
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" class="section">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Sobre mí</h2>
+                <p class="subtitulo-seccion">Conoce un poco más sobre mi trayectoria, estudios y conocimientos técnicos.</p>
+                
+                <div class="sobre-mi-container">
+                    <div class="sobre-mi-texto">
+                        <h3>Desarrollo, Lógica y Seguridad</h3>
+                        <p>Soy estudiante de la Universidad de Costa Rica en el Recinto de Guápiles. Me apasiona crear soluciones eficientes mediante el desarrollo de software estructurado y aplicar buenas prácticas de ciberseguridad.</p>
+                        <p>A lo largo de mi formación, he trabajado profundamente en el diseño de bases de datos relacionales, la implementación de estructuras de datos complejas y el desarrollo de aplicaciones robustas.</p>
+
+                        <div class="habilidades-container">
+                            <h3>Habilidades destacadas</h3>
+                            <div class="habilidades">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>SQL Server</span>
+                                <span>T-SQL</span>
+                                <span>Ciberseguridad</span>
+                                <span>Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="datos-personales">
+                        <div class="dato">
+                            <strong>Ubicación</strong>
+                            <span>Guápiles, Limón, Costa Rica</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Educación</strong>
+                            <span>Universidad de Costa Rica</span>
+                        </div>
+                        <div class="dato">
+                            <strong>Intereses Profesionales</strong>
+                            <span>Desarrollo Backend, Arquitectura de Datos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="section section-gray">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Proyectos</h2>
+                <p class="subtitulo-seccion">Algunos de los desarrollos, investigaciones y trabajos académicos que he realizado recientemente.</p>
+
+                <div class="proyectos-container">
+                    
+                    <!-- Proyecto 1 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto1.jpg" alt="Aplicación Java">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Desarrollo de Software</span>
+                            <h3>Sistema con Java y JavaFX</h3>
+                            <p>Desarrollo de una aplicación implementando estructuras de datos personalizadas, algoritmos de ordenamiento y sistemas multihilo para un rendimiento óptimo.</p>
+                            <div class="proyecto-tecnologias">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>Multithreading</span>
+                            </div>
+                            <button>Ver detalles</button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 2 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto2.jpg" alt="Base de datos SQL Server">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Bases de Datos</span>
+                            <h3>Gestión y Respaldo SQL</h3>
+                            <p>Diseño de modelos Entidad-Relación complejos y creación de rutinas automatizadas de respaldo utilizando SQL Server Agent y scripts T-SQL.</p>
+                            <div class="proyecto-tecnologias">
+                                <span>SQL Server</span>
+                                <span>T-SQL</span>
+                                <span>Automatización</span>
+                            </div>
+                            <button>Ver detalles</button>
+                        </div>
+                    </article>
+
+                    <!-- Proyecto 3 -->
+                    <article class="proyecto">
+                        <div class="proyecto-imagen">
+                            <img src="img/proyecto3.jpg" alt="Investigación de Streaming">
+                        </div>
+                        <div class="proyecto-contenido">
+                            <span class="proyecto-categoria">Investigación</span>
+                            <h3>Análisis de Streaming</h3>
+                            <p>Diseño y ejecución de un proyecto de investigación sobre los hábitos de consumo de plataformas como Netflix en estudiantes universitarios.</p>
+                            <div class="proyecto-tecnologias">
+                                <span>Análisis de Datos</span>
+                                <span>Lógica de Negocio</span>
+                            </div>
+                            <button>Ver detalles</button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="section">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Contáctenos</h2>
+                <p class="subtitulo-seccion">¿Tienes alguna propuesta o quieres que colaboremos en un proyecto de software?</p>
+
+                <div class="contacto-container">
+                    <div class="contacto-info">
+                        <h3>Información de Contacto</h3>
+                        <p>Estoy disponible para colaborar en proyectos relacionados con bases de datos, desarrollo backend y análisis de vulnerabilidades.</p>
+                        <div class="contacto-dato">
+                            <strong>Ubicación</strong>
+                            <span>Recinto de Guápiles</span>
+                        </div>
+                        <div class="contacto-dato">
+                            <strong>Email</strong>
+                            <span>correo@ejemplo.com</span>
+                        </div>
+                        <div class="contacto-dato">
+                            <strong>Disponibilidad</strong>
+                            <span>Tiempo parcial / Remoto</span>
+                        </div>
+                    </div>
+
+                    <!-- Formulario -->
+                    <form id="formContacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <strong>Adán Carranza</strong> &copy; 2026
+            </div>
+            <div class="footer-links">
+                Desarrollador de Software
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
